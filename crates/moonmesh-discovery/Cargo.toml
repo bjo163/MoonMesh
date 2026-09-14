@@ -1,0 +1,11 @@
+[package]
+name = "moonmesh-discovery"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+moonmesh-core.workspace = true
+moonmesh-peer = { path = "../moonmesh-peer" }
+serde = { version = "1", features = ["derive"] }
