@@ -5,14 +5,6 @@ members = [
   "crates/moonmesh-identity",
   "crates/moonmesh-protocol",
   "crates/moonmesh-peer",
-  "crates/moonmesh-discovery",
-  "crates/moonmesh-routing",
-  "crates/moonmesh-connectivity",
-  "crates/moonmesh-tunnel",
-  "crates/moonmesh-relay",
-  "crates/moonmesh-policy",
-  "crates/moonmesh-node",
-  "crates/moonmesh-cli",
 ]
 
 [workspace.package]
@@ -26,10 +18,3 @@ moonmesh-core = { path = "crates/moonmesh-core" }
 moonmesh-identity = { path = "crates/moonmesh-identity" }
 moonmesh-protocol = { path = "crates/moonmesh-protocol" }
 moonmesh-peer = { path = "crates/moonmesh-peer" }
-moonmesh-discovery = { path = "crates/moonmesh-discovery" }
-moonmesh-routing = { path = "crates/moonmesh-routing" }
-moonmesh-connectivity = { path = "crates/moonmesh-connectivity" }
-moonmesh-tunnel = { path = "crates/moonmesh-tunnel" }
-moonmesh-relay = { path = "crates/moonmesh-relay" }
-moonmesh-policy = { path = "crates/moonmesh-policy" }
-moonmesh-node = { path = "crates/moonmesh-node" }
