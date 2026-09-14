@@ -14,8 +14,12 @@ concurrency:
 
 jobs:
   rust:
-    name: Rust quality gates
-    runs-on: ubuntu-latest
+    name: Rust quality gates (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,4 +37,5 @@ jobs:
       - name: Test
         run: cargo test --workspace --all-targets
       - name: Clippy
+        if: runner.os != 'Windows'
         run: cargo clippy --workspace --all-targets -- -D warnings
