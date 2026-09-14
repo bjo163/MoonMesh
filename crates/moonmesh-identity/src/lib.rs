@@ -7,6 +7,8 @@ pub struct Identity {
 
 impl Identity {
     pub fn placeholder() -> Self {
-        Self { peer_id: PeerId("uninitialized".into()) }
+        Self {
+            peer_id: PeerId("uninitialized".into()),
+        }
     }
 }
