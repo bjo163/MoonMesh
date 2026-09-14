@@ -5,6 +5,7 @@ members = [
   "crates/moonmesh-identity",
   "crates/moonmesh-protocol",
   "crates/moonmesh-peer",
+  "crates/moonmesh-routing",
 ]
 
 [workspace.package]
@@ -18,3 +19,4 @@ moonmesh-core = { path = "crates/moonmesh-core" }
 moonmesh-identity = { path = "crates/moonmesh-identity" }
 moonmesh-protocol = { path = "crates/moonmesh-protocol" }
 moonmesh-peer = { path = "crates/moonmesh-peer" }
+moonmesh-routing = { path = "crates/moonmesh-routing" }
